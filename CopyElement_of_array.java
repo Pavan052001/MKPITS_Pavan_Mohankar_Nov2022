@@ -13,7 +13,7 @@ for(int i=0;i<arr.length;i++){
 	System.out.println(copyarr[i]);
 
 	}
-
+/*
 	System.out.println("Element of original array;");
 
 for(int i=0;i<arr.length;i++){
@@ -27,6 +27,6 @@ for( int i=0;i<copyarr.length;i++){
 
 	 System.out.println(+copyarr[i]);
 	}
-
+*/
 }
 }
