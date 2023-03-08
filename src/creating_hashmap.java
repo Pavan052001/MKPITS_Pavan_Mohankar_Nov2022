@@ -1,0 +1,15 @@
+import java.util.HashMap;
+
+public class creating_hashmap {
+    public static void main(String[] args) {
+
+        HashMap<Integer,String> map=new HashMap<>();
+
+        map.put(1,"all");
+        map.put(2,"the");
+        map.put(3,"best");
+
+        System.out.println(map);
+
+    }
+}
