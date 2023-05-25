@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    
+    <title>Document</title>
+    <style>
+
+         form {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #c51313;
+            border-radius: 40px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            animation: slideInUp 1s ease-in-out;
+            color: #091c7e;
+            padding-left: 20px;
+            
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            animation: slideInLeft 1s ease-in-out;
+        }
+
+        input[type="number"] {
+            width: 50%;
+        }
+
+        input[type="submit"],
+        input[type="button"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            animation: slideInUp 1s ease-in-out;
+        }
+
+        input[type="submit"]:hover,
+        input[type="button"]:hover {
+            background-color: #3e8e41;
+        }
+        input[type="reset"] {
+            background-color: #ed1515;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            animation: slideInUp 1s ease-in-out;
+        }
+
+        /* .btn{
+            text-align: center;
+        } */
+
+        #box{
+            display: grid;
+            grid-template-columns: 600px 550px;
+            grid-template-rows: 400px;
+            grid-gap: 20px;
+        }
+
+        #box-2{
+            margin-left: 0px;
+        }
+        #box3{
+            margin-left:30px;
+            margin-top: 1000px;
+            padding-right: 100px;
+            float:left;
+            
+            
+        }
+        #box1{
+            display: grid;
+            width: 1000px;
+        }
+        #box4{
+            margin-top: 0;
+        } 
+        legend{
+            color: rgb(163, 216, 216);
+        }
+        #price-event,#full-name{
+            background-color: rgb(236, 226, 226);
+            
+        }
+        #full-name{
+            background-color: rgb(236, 226, 226);
+        }
+        #Ccy{
+            background-color: rgb(236, 226, 226);
+        }
+        #Prem_Disc{
+            background-color: rgb(236, 226, 226);
+
+        }
+        #UOM{
+            
+            background-color: rgb(236, 226, 226);
+
+        }
+        *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.nav-bar{
+  background-color:blue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.items{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 2px solid white;
+  width: 240px;
+  height: 50px;
+}
+   
+
+
+    </style>
+</head>
+<body>
+  
+    <form name="form1">
+        <div class="container">
+
+            <div class="nav-bar">
+              <div class="items">
+               
+                <p><i class="fa-regular fa-calendar-days"></i>Scheduling</p>
+              </div>
+          
+              <div class="items">
+                
+                <p><i class="fa fa-exchange" aria-hidden="true"></i>Transfer</p>
+              </div>
+          
+              <div class="items">
+                
+                <p><i class="fa-solid fa-badge-dollar"></i> &nbsp;Cashflow</p>
+              </div>
+          
+              <div class="items">
+                
+                <p> <i class="fa-solid fa-file-invoice"></i>Invoice</p>
+              </div>
+          
+              <div class="items">
+                
+                <p>Risk</p>
+              </div>
+            </div>
+            
+          </div>
+         
+        <div>
+            <h2>Input Form</h2>
+        </div>
+        <div id="box">
+            <div id="box-1">
+                <fieldset>
+    
+                    <legend>
+                        <h3>Price</h3>
+                    </legend>
+    
+                    <label for="full-name">Type:</label>
+                    <select id="full-name" class="full-name">
+                        <option value="Statendard Formula1"></option>
+                        <option value="Statendard Formula2">Statendard Formula2</option>
+                        <option value="Statendard Formula3">Statendard Formula3</option>
+                    </select>
+
+    
+                    <label for="name" class="form-label">Price Rounding</label>
+                    <input type="number" id="price-event" class="name">
+                    
+                    <label for="number">Result Rounding</label>
+                    <input type="number" id="number" name="number">
+
+                     <label for="price event" class="price-event">Pricing Event</label>
+                    <select id="price event" name="price event">
+                        <option value="Statendard Formula1"></option>
+                        <option value="Statendard Formula2"></option>
+                        <option value="Statendard Formula3">Statendard Formula3</option>
+                    </select> 
+    
+                </fieldset>
+                
+                <br><br>
+                <br>
+            </div>
+            <div id="box-2">
+                <fieldset>
+                    <legend>
+                        <h3>Settlement</h3>
+                    </legend>
+                    <!-- <label for="date">Invoice Date</label>
+                    <input type="date" id="date" name="date"> -->
+                    <label for="Ccy"> Ccy</label>
+                    <input type="text" id="Ccy" name="Ccy">
+                    <label for="UOM">UOM</label>
+                    <input type="text" id="UOM" name="UOM">
+                     <label for="Payment Due">Payment Due</label>
+                    <input type="text" id="Payment Due" name = "Payment Due">
+                    <!-- <label for="total1">Total Price</label>
+                    <input type="number" id="total1" name="total"> -->
+                </fieldset><br>
+            </div>
+
+
+            <div id="box-3">
+                <fieldset>
+                    <legend>
+                        <h3>MTM</h3>
+                    </legend>
+                    <label for="Index">Index</label>
+                    <select id="Index" name="Index">
+                        <option value="index1">index1</option>
+                        <option value="index2">index2</option>
+                        <option value="index3">index3</option>
+                    </select>
+                    <label for="Statendard Formula">Statendard Formula</label>
+                    <select id="Statendard Formula" name="Statendard Formula">
+                        <option value="Statendard Formula1">Statendard Formula1</option>
+                        <option value="Statendard Formula2">Statendard Formula2</option>
+                        <option value="Statendard Formula3">Statendard Formula3</option>
+                    </select>
+    
+                  
+                    <label for="Prem/Disc">Prem/Disc</label>
+                    <input type="text" id="Prem/Disc" name="Prem/Disc" placeholder="">
+
+
+                    <select id="Ccy" name="Prem/Disc">
+                        <option value="Statendard Formula1">CCY</option>
+                        <option value="Statendard Formula2">Statendard Formula2</option>
+                        <option value="Statendard Formula3">Statendard Formula3</option>
+                    </select>
+
+
+                    
+                    <select id="UOM" name="UOM">
+                        <option value="UOM ">UOM</option>
+                        <option value="UOM ">Statendard Formula1 </option>
+                        <option value="UOM ">UOM </option>
+                    </select>
+
+
+                    <label for="Risk Period Rule">Risk Period Rule</label>
+                    <input type="text" id="Risk Period Rule" name="Risk Period Rule" placeholder="">
+
+                   
+                
+
+                    
+
+                    <label for="Risk Period Term">Risk Period Term</label> 
+                 <input type="text" id="Risk Period Term" name="Risk Period Rule">
+
+              
+                
+                
+                           <label>Custom Risk Period </label><input type="checkbox" id="checkbox" name="checkbox"> 
+                                          
+                </fieldset>
+               </div>
+
+               <div id="box4">
+
+                <fieldset>
+                    <legend>
+                        <h3> Trader MTM</h3>
+                    </legend>
+                
+
+                <label for="Index">Index</label>
+                <input type="text" id="index" name="index" >
+
+                   
+                    <label for="Standard Formula">Standard Formula</label>
+                    <input type="text" id="Standard Formula" name="Standard Formula" >
+
+                    <label for="Prem/Disc">Prem/Disc</label>
+                    <input type="text" id="Prem/Disc" name="Prem/Disc">
+
+                    <select id="Ccy" name="Risk Period Rule">
+                        <option value="Statendard Formula1">CCY</option>
+                        <option value="Statendard Formula2">Statendard Formula2</option>
+                        <option value="Statendard Formula3">Statendard Formula3</option>
+                    </select>
+ 
+ 
+                 <select id="UOM" name="Risk Period Term">
+                    <option value="Statendard Formula1">UOM</option>
+                    <option value="Statendard Formula2">Statendard Formula2</option>
+                    <option value="Statendard Formula3">Statendard Formula3</option>
+                </select>
+                  
+                    <label for="Risk Period Rule">Risk Period Rule</label>
+                    <input type="date" id="Risk Period Rule" name="Risk Period Rule" placeholder="">
+
+                    <label for="Risk Period Term">Risk Period Term</label>
+                    <input type="text" id="Risk Period Term" name="Risk Period Rule">
+ 
+                 
+
+
+                </fieldset>
+               </div>    
+                
+            </div>
+    
+        </div>
+        </br>
+        <!-- <div class="btn">
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Clear" />
+        </div>   -->
+
+
+</form>
+
+<!-- <label for="country">State:</label>
+        <select id="country2" name="state">
+            <option value="mh">Maharasshtra</option>
+            <option value="up">Uttar Pradesh</option>
+            <option value="rajasthan">Rajasthan</option>
+        </select> -->
+
+
+
+</body>
+</html>
