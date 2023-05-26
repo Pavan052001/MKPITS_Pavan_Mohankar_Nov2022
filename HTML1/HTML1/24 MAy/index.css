@@ -1,0 +1,24 @@
+.abc{
+    color:rgba(100,140,16);
+    background-color: #cd1515;
+    text-align: center;
+    border: 10px solid rebeccapurple;
+    border-radius:15px ;
+    
+}
+.red{
+    color: blue;
+}
+.nam{
+    border-top: 5px groove black;
+    
+
+    color:rgba(8, 11, 0, 0.4);
+    background-color: #cd1515;
+    text-align: center;
+}
+
+.pavan{
+    color:hsl(25, 100%, 50%);
+    background-color:hsl(23,50%, 10%);
+}
