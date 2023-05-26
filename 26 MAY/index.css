@@ -1,0 +1,12 @@
+.main{
+
+    height: 200px;
+    width: 200px;
+    outline: 12px solid rgb(220, 16, 33);
+    background: #62d74b;
+    border: 5px solid rgb(68, 17, 156);
+    margin: 30px;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 150px;
+}
