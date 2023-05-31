@@ -1,0 +1,49 @@
+.main{
+    height: 100vh;
+    width: 100px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    justify-content: space-between;
+}
+
+.a{
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    box-shadow:3px 3px 2px blue,5px 5px 2px red;
+    background-color: aqua;
+  
+}
+
+.b{
+    height: 100px;
+    width: 100px;
+    box-shadow:3px 3px 2px blue,5px 5px 2px red;
+    background-color: aqua;
+  
+}
+
+.c{
+    height: 100px;
+    width: 100px;
+    box-shadow:3px 3px 2px blue,5px 5px 2px red;
+    background-color: aqua;
+  
+}
+
+.d{
+    height: 100px;
+    width: 100px;
+    box-shadow:3px 3px 2px blue,5px 5px 2px red;
+    background-color: aqua;
+  
+}
+
+.e{
+    height: 100px;
+    width: 100px;
+    box-shadow:3px 3px 2px blue,5px 5px 2px red;
+    background-color: aqua;
+  
+}
+
