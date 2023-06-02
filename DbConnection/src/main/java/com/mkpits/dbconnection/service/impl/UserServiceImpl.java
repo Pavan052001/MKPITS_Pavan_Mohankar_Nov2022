@@ -36,7 +36,7 @@ public class UserServiceImpl implements UserService {
         List <UserMysql> userMysqlList = userMysqlRepo.findAll();
         userMysqlList.stream().forEach(userMysql -> {
             UserDto studentDto = UserDto.builder()
-                    .firstName(userMysql.getFirstName())
+                     .firstName(userMysql.getFirstName())
                     .lastName(userMysql.getLastName())
                     .email(userMysql.getEmail())
                     .mobile(userMysql.getMobile())
