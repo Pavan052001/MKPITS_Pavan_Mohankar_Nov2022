@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class StudentController {
     private StudentService studentService;
-    public StudentController(StudentService studentService) {
+    public StudentController(StudentService studentService)  {
         this.studentService = studentService;
     }
     @GetMapping("/Students")
@@ -50,13 +50,16 @@ public class StudentController {
 
         studentService.updateStudent(existingStudent);
         return "redirect:/Students";
-
-
     }
     @GetMapping("/Students/{id}")
     public String deleteStudent(@PathVariable Long id){
         studentService.deleteStudentById(id);
         return "redirect:/Students";
 
+    }
+    @PostMapping("/Students/confirm-delete/{id}")
+    public String confirmDeleteStudent(@PathVariable Long id) {
+        // Delete the student from the HTML table (client-side only)
+        return "redirect:/Students";
     }
 }

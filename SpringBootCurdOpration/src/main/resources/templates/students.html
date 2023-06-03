@@ -26,7 +26,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr th:each="student:${Students}">
+            <tr th:each="student:${Students}"  >
                 <td th:text="${student.firstName}"></td>
                 <td th:text="${student.lastName}"></td>
                 <td th:text="${student.email}"></td>
@@ -37,6 +37,8 @@
                     <a th:href="@{/Students/{id}(id=${student.id})}" class="btn btn-danger" >
                         Delete
                     </a>
+                    <a th:href="@{/Students/delete/{id}(id=${student.id})}" class="btn btn-info delete-button"> temp Delete</a>
+
                 </td>
 
 
@@ -45,6 +47,16 @@
 
         </table>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".delete-button").click(function (e) {
+                e.preventDefault();
+                var row = $(this).closest("tr");
+                row.remove();
+            });
+        });
+    </script>
 
 </body>
 </html>

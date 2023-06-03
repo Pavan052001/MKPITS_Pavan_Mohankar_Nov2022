@@ -3,7 +3,7 @@ package com.mkpits.SpringBootCurdOpration.entity;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.Date;
+
 @Setter
 @Getter
 @AllArgsConstructor
