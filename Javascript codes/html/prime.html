@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="id1">
+    <button onclick="panya()">submit</button>
+    
+    <script>
+        function panya(){
+             flag=0;
+            number = document.getElementById("id1").value
+
+            if (number ==0 || number ==1) {
+                document.write("not prime number")
+                
+            } else {
+                for (let index = 2; index < number/2; index++) {
+                    
+                    if (number%index==0) {
+                        flag++ ;
+                        
+                    }
+                        
+                }
+                
+            }
+            if (flag==0) {
+                document.write(" prime number")
+                
+            }
+            else{
+                document.write(number+" not prime number")
+
+            }
+        }
+
+    </script>
+</body>
+</html>

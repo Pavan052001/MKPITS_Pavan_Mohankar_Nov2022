@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"  id="main">
+    <button onclick="palin()">on</button>
+
+<script>
+
+    function palin(){
+       name = document.getElementById('main').value
+        reverse="";
+
+       reverse =name.split('').reverse().join('')
+
+
+
+    //    for (let index = name.length-1; index >=0; index--) {
+    //     reverse = reverse+name.charAt(index)
+    //     }
+       if (name===reverse) {
+        document.writeln("palindrom")
+        
+       } else {
+        document.writeln("not palindrom")
+        
+       }
+    }
+</script>
+    
+</body>
+</html>
